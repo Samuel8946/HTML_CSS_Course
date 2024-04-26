@@ -14,21 +14,24 @@
             font-size: 18px;
             border-radius: 20px;
             transition: 0.15s;
+            cursor: pointer;
+            margin-right: 5px;
         }
 
         .second {
-            color: rgb(10, 102, 194);
             background-color: white;
+            color: rgb(10, 102, 194);
+            border-width: 1px;
             border-style: solid;
             border-color: rgb(10, 102, 194);
-            width: 100px;
-            height: 42px;
-            border-width: 1px;
+            height: 45px;
+            width: 90px;
             font-weight: bold;
             font-size: 18px;
             border-radius: 20px;
-            margin-left: 10px;
-            transition: 0.15s;
+            cursor: pointer;
+            transition: background-color 0.15s,
+            border-width 0.15s;
         }
 
         .first:hover {
@@ -36,13 +39,13 @@
         }
 
         .second:hover {
+            background-color: rgba(10, 102, 194, 0.1);
             border-width: 2px;
-            background-color: rgba(7, 76, 145, 0.1);
         }
     </style>
 </head>
 <body>
-    <button class="first">Apply on company website</button>
+    <button class="first">Apply on company website</button> 
     <button class="second">Save</button>
 </body>
 </html>
